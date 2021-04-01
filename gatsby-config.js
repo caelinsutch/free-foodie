@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Free Foodie",
+    siteUrl: "https://freefoodie.gatsbyjs.io/",
   },
   plugins: [
     "gatsby-transformer-json",
