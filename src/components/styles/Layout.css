@@ -1,0 +1,9 @@
+@import "./typography.css";
+
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: "Lovelo", "Lovelo-Line", "Lovelo-LineBold", "League Gothic", "Glacial Indifference", "Glacial Indifference Bold", georgia, serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+}

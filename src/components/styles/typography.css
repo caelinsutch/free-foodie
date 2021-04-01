@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "League Gothic";
+  src: url("./fonts/LeagueGothic-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("./fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+  font-family: "Glacial Indifference Bold";
+  src: url("./fonts/GlacialIndifference-Bold.otf");
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("./fonts/Lovelo-Black.otf");
+}
+
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("./fonts/Lovelo-LineBold.otf");
+}
+
+@font-face {
+  font-family: "Lovelo-Line";
+  src: url("./fonts/Lovelo-LineLight.otf");
+}
