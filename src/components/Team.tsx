@@ -74,7 +74,7 @@ const Team: React.FC = () => {
     <VStack
       bgColor="#05E0E9"
       height="100vh"
-      width="100vw"
+      width="100%"
       justifyContent="center"
       overflow="hidden"
       padding="2rem 0"
