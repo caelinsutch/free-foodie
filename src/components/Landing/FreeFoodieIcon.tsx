@@ -11,6 +11,7 @@ const FreeFoodieIcon: React.FC = () => {
         letterSpacing="0.15em"
         textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
         paddingBottom="4rem"
+        transform="translateX(0.5rem)"
       >
         FREE
       </Text>
@@ -73,6 +74,7 @@ const FreeFoodieIcon: React.FC = () => {
         letterSpacing="0.15em"
         textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
         paddingTop="2rem"
+        transform="translateX(0.5rem)"
       >
         FOODIE
       </Text>
