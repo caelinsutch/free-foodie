@@ -1,9 +1,9 @@
 import React from "react";
-import { Flex, HStack, VStack, Text, Box } from "@chakra-ui/react";
+import { HStack, VStack, Text, Box, Flex } from "@chakra-ui/react";
 import { useStaticQuery, graphql } from "gatsby";
-// import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const Team = () => {
+const Team: React.FC = () => {
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
       allTeamdataJson {
@@ -11,26 +11,47 @@ const Team = () => {
           node {
             name
             description
+            img {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 200
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
           }
         }
       }
     }
   `);
 
-  function getMembers(data) {
-    const membersArray = [];
-    data.allTeamdataJson.edges.forEach((item, index) => {
+  // console.log(data);
+
+  function getMembers(data: any) {
+    const membersArray: any = [];
+    data.allTeamdataJson.edges.forEach((item: any, index: any) => {
+      const image = getImage(item.node.img);
+      console.log(image);
       membersArray.push(
-        <VStack alignItems="flex-start" textAlign="start" width="250px">
-          <Box
-            bgColor="#0c0c0c"
-            boxShadow="-1rem -1rem #FF00BF"
-            width="245px"
-            height="350px"
-          ></Box>
+        <VStack
+          justifyContent="center"
+          alignItems="flex-start"
+          textAlign="start"
+          width={{ base: "150px", md: "200px" }}
+          key={index}
+        >
+          <Flex
+            boxShadow={{
+              base: "-0.5rem -0.5rem #FF00BF",
+              md: "-1rem -1rem #FF00BF",
+            }}
+          >
+            <GatsbyImage image={image} alt={item.node.alt}></GatsbyImage>
+          </Flex>
           <Text
             fontFamily="Lovelo"
-            fontSize="30px"
+            fontSize={{ base: "20px", md: "24px" }}
             color="#FF00BF"
             textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
           >
@@ -38,7 +59,7 @@ const Team = () => {
           </Text>
           <Text
             fontFamily="Glacial Indifference"
-            fontSize="14px"
+            fontSize={{ base: "12px", md: "14px" }}
             color="#0c0c0c"
           >
             {item.node.description}
@@ -53,34 +74,52 @@ const Team = () => {
     <VStack
       bgColor="#05E0E9"
       height="100vh"
-      width="100%"
+      width="100vw"
       justifyContent="center"
+      overflow="hidden"
+      padding="2rem 0"
     >
-      <HStack zIndex={100} paddingTop="5rem">
-        <Text fontFamily="Lovelo" fontSize="150px" color="#fff" opacity="0.2">
+      <HStack
+        zIndex={100}
+        // paddingTop="5rem"
+        justifyContent="center"
+        alignItems="center"
+        fontSize={{ base: "60px", md: "100px" }}
+        paddingBottom="2rem"
+      >
+        <Text fontFamily="Lovelo" color="#fff" opacity="0.2">
           TEAMTEAM
         </Text>
-        <Text fontFamily="Lovelo" fontSize="150px" color="#fff">
+        <Text fontFamily="Lovelo" color="#fff">
           TEAM
         </Text>
-        <Text fontFamily="Lovelo" fontSize="150px" color="#fff" opacity="0.2">
+        <Text
+          fontFamily="Lovelo"
+          color="#fff"
+          opacity="0.2"
+          // whiteSpace="nowrap"
+          overflow="hidden"
+        >
           TEAMTEAM
         </Text>
       </HStack>
       <HStack
         alignItems="flex-start"
-        spacing="2rem"
+        spacing={{ base: "1.5rem", md: "2.5rem" }}
         zIndex="1000"
-        paddingBottom="10rem"
+        // paddingBottom="10rem"
       >
         {getMembers(data)}
       </HStack>
       <Box
         bgColor="white"
-        width="1000px"
-        height="500px"
+        width={{ base: "850px", md: "850px" }}
+        height={{ base: "300", md: "375px" }}
         position="absolute"
-        transform="translateY(30%)"
+        transform={{
+          base: "translateY(40%) translateX(5%)",
+          md: "translateY(40%) translateX(5%)",
+        }}
       ></Box>
     </VStack>
   );

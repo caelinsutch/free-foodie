@@ -1,21 +1,21 @@
 [
   {
-    "img": "",
-    "alt": "Gregory Zenin Picture",
+    "img": "../images/GregoryZenin.png",
+    "alt": "Gregory Zenin Profile Image",
     "name": "Gregory Zenin",
     "description":
       "I'm studying History and Russian at the University of Edinburgh. But more importantly, I'm just a guy who loves food and the planet which gives it to us!"
   },
   {
-    "img": "",
-    "alt": "kalenda project image",
+    "img": "../images/SophieHenchoz.png",
+    "alt": "Sophie Henchoz Profile Image",
     "name": "Sophie Henchoz",
     "description":
       "I'm from the South East coast of England and am in my third year of studying French and Russian at Edinburgh."
   },
   {
-    "img": "",
-    "alt": "visualizer project image",
+    "img": "../images/JackBennett.png",
+    "alt": "Jack Bennet Profile Image",
     "name": "Jack Bennett",
     "description":
       "Originally from Yorkshire and now studying History at the University of Edinburgh, I hope to see the world and make a change."

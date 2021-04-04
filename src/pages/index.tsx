@@ -9,16 +9,14 @@ import Donate from "../components/Donate";
 
 const HomePage: React.FC = () => {
   return (
-    <main>
-      <Layout>
-        {/* <ScrollableContainer animationTime={1000}> */}
-        <Landing />
-        <About />
-        <Team />
-        <Donate />
-        {/* </ScrollableContainer> */}
-      </Layout>
-    </main>
+    <Layout>
+      {/* <ScrollableContainer animationTime={1000}> */}
+      <Landing />
+      <About />
+      <Team />
+      <Donate />
+      {/* </ScrollableContainer> */}
+    </Layout>
   );
 };
 
