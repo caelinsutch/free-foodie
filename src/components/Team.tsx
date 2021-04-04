@@ -84,7 +84,7 @@ const Team: React.FC = () => {
         // paddingTop="5rem"
         justifyContent="center"
         alignItems="center"
-        fontSize={{ base: "60px", md: "100px" }}
+        fontSize={{ base: "100px", md: "120px" }}
         paddingBottom="2rem"
       >
         <Text fontFamily="Lovelo" color="#fff" opacity="0.2">

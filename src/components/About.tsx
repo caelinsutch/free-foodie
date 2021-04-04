@@ -53,8 +53,10 @@ const About: React.FC = () => {
               sm: "14px",
               md: "18px",
               lg: "20px",
-              xl: "22px",
+              xl: "24px",
+              "2xl": "28px",
             }}
+            fontWeight="bold"
             lineHeight={{ base: "2rem", lg: "2.5rem" }}
           >
             Every year, around 1/3 of all food is wasted, yet 854 million people

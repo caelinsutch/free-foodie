@@ -15,6 +15,7 @@ module.exports = {
     "@chakra-ui/gatsby-plugin",
     "gatsby-plugin-typescript",
     "gatsby-plugin-gatsby-cloud",
+    `gatsby-plugin-styled-components`,
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
