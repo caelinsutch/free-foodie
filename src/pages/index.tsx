@@ -5,6 +5,7 @@ import Landing from "../components/Landing";
 import About from "../components/About";
 import Team from "../components/Team";
 import Donate from "../components/Donate";
+import Instagram from "../components/Instagram";
 // import ScrollableContainer from "react-full-page-scroll";
 
 const HomePage: React.FC = () => {
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
       {/* <ScrollableContainer animationTime={1000}> */}
       <Landing />
       <About />
+      <Instagram />
       <Team />
       <Donate />
       {/* </ScrollableContainer> */}
