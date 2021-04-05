@@ -16,6 +16,8 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-gatsby-cloud",
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-smoothscroll`,
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

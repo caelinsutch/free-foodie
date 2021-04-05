@@ -79,35 +79,27 @@ const Team: React.FC = () => {
       overflow="hidden"
       padding="2rem 0"
     >
-      <HStack
-        zIndex={100}
-        // paddingTop="5rem"
-        justifyContent="center"
-        alignItems="center"
+      <Text
+        fontFamily="Lovelo"
+        color="#fff"
         fontSize={{ base: "100px", md: "120px" }}
         paddingBottom="2rem"
+        data-sal="slide-left"
+        // data-sal-delay="500"
+        data-sal-easing="ease"
+        data-sal-duration="1500"
       >
-        <Text fontFamily="Lovelo" color="#fff" opacity="0.2">
-          TEAMTEAM
-        </Text>
-        <Text fontFamily="Lovelo" color="#fff">
-          TEAM
-        </Text>
-        <Text
-          fontFamily="Lovelo"
-          color="#fff"
-          opacity="0.2"
-          // whiteSpace="nowrap"
-          overflow="hidden"
-        >
-          TEAMTEAM
-        </Text>
-      </HStack>
+        TEAM
+      </Text>
       <HStack
         alignItems="flex-start"
         spacing={{ base: "1.5rem", md: "2.5rem" }}
         zIndex="1000"
         // paddingBottom="10rem"
+        data-sal="fade"
+        // data-sal-delay="500"
+        data-sal-easing="ease"
+        data-sal-duration="1500"
       >
         {getMembers(data)}
       </HStack>

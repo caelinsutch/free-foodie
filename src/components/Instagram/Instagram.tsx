@@ -1,8 +1,10 @@
 import React from "react";
-import { VStack, HStack, Flex, Box, Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
+import { VStack, HStack, Flex, Box, Text, Link } from "@chakra-ui/layout";
+// import InstagramLink from "./InstagramLink";
+import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
 
-const Instagram = () => {
+const Instagram: React.FC = () => {
   return (
     <Flex
       width="100%"
@@ -18,34 +20,44 @@ const Instagram = () => {
           position="relative"
           zIndex={100}
         >
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk22.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk21.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk20.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
         </VStack>
         <VStack spacing="2rem">
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-            position="relative"
-            zIndex={100}
-          ></Box>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk19.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
           <VStack
             // bgColor="#0c0c0c"
             borderRadius="20px"
@@ -55,6 +67,10 @@ const Instagram = () => {
             color="#00F4CF"
             fontSize="60px"
             justifyContent="center"
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
           >
             <Text>INSTAGRAM</Text>
             <Text
@@ -64,17 +80,19 @@ const Instagram = () => {
             >
               INSTAGRAM
             </Text>
-            <Button
+            <Link
               bgColor="transparent"
               borderWidth="3px"
               borderColor="#00F4CF"
               borderRadius="10px"
+              padding="0 1rem"
               paddingTop="0.5rem"
+              href="https://www.instagram.com/freefoodieuk/"
             >
-              <Text fontFamily="Lovelo" fontSize="30px">
+              <Text fontFamily="Lovelo" fontSize="24px">
                 FOLLOW US
               </Text>
-            </Button>
+            </Link>
           </VStack>
           <Box
             position="absolute"
@@ -112,14 +130,15 @@ const Instagram = () => {
             </svg>
           </Box>
 
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-            position="relative"
-            zIndex={100}
-          ></Box>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk18.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
         </VStack>
         <VStack
           spacing="2rem"
@@ -127,31 +146,40 @@ const Instagram = () => {
           position="relative"
           zIndex={100}
         >
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
-          <Box
-            bgColor="#0c0c0c"
-            borderRadius="20px"
-            width="400px"
-            height="400px"
-          ></Box>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk17.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk16.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
+          <Link href="https://www.instagram.com/p/CNNSkLmDf1r/">
+            <InstagramLink>
+              <StaticImage
+                src="../../images/InstagramPosts/freefoodieuk15.jpg"
+                alt="Instagram Post"
+                placeholder="blurred"
+              ></StaticImage>
+            </InstagramLink>
+          </Link>
         </VStack>
       </HStack>
       <Text
         fontFamily="Lovelo"
         fontWeight="bold"
         color="#00F4CF"
-        fontSize="150px"
+        fontSize="18vh"
         transform="rotate(90deg) translateY(42rem)"
         position="absolute"
         opacity="0.2"
@@ -163,3 +191,18 @@ const Instagram = () => {
 };
 
 export default Instagram;
+
+const InstagramLink = styled(Flex)`
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  filter: opacity(70%);
+  transition: 0.3s ease;
+
+  &:hover {
+    filter: opacity(100%);
+  }
+`;

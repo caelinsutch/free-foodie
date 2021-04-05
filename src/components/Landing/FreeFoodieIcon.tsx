@@ -12,10 +12,21 @@ const FreeFoodieIcon: React.FC = () => {
         textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
         paddingBottom="4rem"
         transform="translateX(0.5rem)"
+        data-sal="slide-left"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="700"
       >
         FREE
       </Text>
-      <Box bgColor="#fff" transform="translateX(-5rem) translateY(-5rem)">
+      <Box
+        bgColor="#fff"
+        transform="translateX(-5rem) translateY(-5rem)"
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
+      >
         <Box
           position="absolute"
           transform="translateX(-0.6rem) translateY(-0.6rem)"
@@ -75,6 +86,10 @@ const FreeFoodieIcon: React.FC = () => {
         textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
         paddingTop="2rem"
         transform="translateX(0.5rem)"
+        data-sal="slide-right"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="700"
       >
         FOODIE
       </Text>
