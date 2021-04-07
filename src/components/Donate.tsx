@@ -9,6 +9,7 @@ const Donate: React.FC = () => {
       bgColor="#FFEB9A"
       justifyContent="center"
       alignItems="center"
+      className="section"
     >
       <VStack>
         <Text

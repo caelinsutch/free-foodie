@@ -1,4 +1,5 @@
 import React from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
 
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
@@ -11,13 +12,22 @@ import Instagram from "../components/Instagram/Instagram";
 const HomePage: React.FC = () => {
   return (
     <Layout>
-      {/* <ScrollableContainer animationTime={1000}> */}
-      <Landing />
-      <About />
-      <Instagram />
-      <Team />
-      <Donate />
-      {/* </ScrollableContainer> */}
+      <ReactFullpage
+        scrollingSpeed={1000}
+        verticalCentered={false}
+        navigation={true}
+        render={() => {
+          return (
+            <ReactFullpage.Wrapper>
+              <Landing />
+              <About />
+              <Instagram />
+              <Team />
+              <Donate />
+            </ReactFullpage.Wrapper>
+          );
+        }}
+      ></ReactFullpage>
     </Layout>
   );
 };

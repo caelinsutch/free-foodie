@@ -29,10 +29,12 @@ const Landing: React.FC = () => {
   return (
     // <BgImage image={image}>
     <VStack
+      className="section"
       width="100%"
       minHeight="100vh"
       bgColor="#00F4CF"
       justifyContent="space-between"
+      alignItems="center"
       padding="2rem 0"
     >
       <ScrollButton invisibleFlex="true" />

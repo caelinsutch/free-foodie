@@ -22,6 +22,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/pt-mono": "^4.2.2",
+    "@fullpage/react-fullpage": "^0.1.19",
     "@types/styled-components": "^5.1.9",
     "babel-plugin-styled-components": "^1.12.0",
     "framer-motion": "^4",

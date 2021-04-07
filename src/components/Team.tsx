@@ -78,6 +78,7 @@ const Team: React.FC = () => {
       justifyContent="center"
       overflow="hidden"
       padding="2rem 0"
+      className="section"
     >
       <Text
         fontFamily="Lovelo"

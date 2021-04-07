@@ -12,6 +12,7 @@ const Instagram: React.FC = () => {
       justifyContent="center"
       alignItems="center"
       overflow="hidden"
+      className="section"
     >
       <HStack spacing="2rem">
         <VStack

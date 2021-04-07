@@ -10,7 +10,8 @@ const About: React.FC = () => {
       bgColor="#FF00BF"
       justifyContent="center"
       alignItems="center"
-      padding={{ base: "0 1.5rem", md: "5rem 4rem", lg: "5rem 8rem" }}
+      padding={{ base: "0 1.5rem", md: "0rem 5rem", lg: "0rem 10rem" }}
+      className="section"
     >
       <Flex
         flexDirection={{ base: "column", md: "row" }}
@@ -29,16 +30,10 @@ const About: React.FC = () => {
           lineHeight={{ base: "6rem", md: "10rem" }}
           paddingRight={{ base: "none", md: "2.5rem" }}
           // overflowWrap="normal"
+          textShadow="-0.3rem -0.3rem #FF00BF, -0.4rem -0.4rem #fff"
         >
           WHAT WE DO
         </Text>
-        {/* <Text
-          fontFamily="Lovelo-Line"
-          position="absolute"
-          transform="translateX(-0.7rem)"
-        >
-          WHAT WE DO
-        </Text> */}
         <Text
           fontFamily="Glacial Indifference"
           fontSize={{
