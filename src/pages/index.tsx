@@ -16,10 +16,10 @@ const HomePage: React.FC = () => {
         scrollingSpeed={1000}
         verticalCentered={false}
         navigation={true}
-        render={() => {
+        render={({ fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <Landing />
+              <Landing fullpageApi={fullpageApi} />
               <About />
               <Instagram />
               <Team />

@@ -1,16 +1,19 @@
 import React from "react";
 import { Button, HStack, Text } from "@chakra-ui/react";
 import { AiOutlineDown } from "react-icons/ai";
-import scrollTo from "gatsby-plugin-smoothscroll";
 
 type ScrollButtonProps = {
   invisibleFlex?: string;
+  fullpageApi: any;
 };
 
-const ScrollButton: React.FC<ScrollButtonProps> = ({ invisibleFlex }) => {
+const ScrollButton: React.FC<ScrollButtonProps> = ({
+  invisibleFlex,
+  fullpageApi,
+}) => {
   return (
     <Button
-      onClick={() => scrollTo("#about-section")}
+      onClick={() => fullpageApi.moveSectionDown()}
       bgColor="transparent"
       visibility={invisibleFlex ? "hidden" : "visible"}
     >

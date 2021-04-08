@@ -7,7 +7,11 @@ import { VStack } from "@chakra-ui/react";
 import FreeFoodieIcon from "./FreeFoodieIcon";
 import ScrollButton from "./ScrollButton";
 
-const Landing: React.FC = () => {
+type LandingProps = {
+  fullpageApi: any;
+};
+
+const Landing: React.FC<LandingProps> = ({ fullpageApi }) => {
   // const { landingBgImage } = useStaticQuery(
   //   graphql`
   //     query {
@@ -37,13 +41,14 @@ const Landing: React.FC = () => {
       alignItems="center"
       padding="2rem 0"
     >
-      <ScrollButton invisibleFlex="true" />
+      <ScrollButton invisibleFlex="true" fullpageApi={fullpageApi} />
       <FreeFoodieIcon />
       <ScrollButton
         data-sal="slide-up"
         data-sal-delay="100"
         data-sal-easing="ease"
         data-sal-duration="700"
+        fullpageApi={fullpageApi}
       />
     </VStack>
     // </BgImage>

@@ -1,24 +1,19 @@
 import React from "react";
 import { VStack, Text, Box } from "@chakra-ui/react";
+import styled from "styled-components";
 
 const FreeFoodieIcon: React.FC = () => {
   return (
-    <VStack>
-      <Text
-        fontFamily="League Gothic"
-        fontSize="120px"
-        color="#fff"
-        letterSpacing="0.15em"
-        textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
-        paddingBottom="4rem"
-        transform="translateX(0.5rem)"
+    <VStack paddingLeft="1.5rem">
+      <Title
         data-sal="slide-left"
         data-sal-delay="100"
         data-sal-easing="ease"
         data-sal-duration="700"
+        paddingBottom="4rem"
       >
         FREE
-      </Text>
+      </Title>
       <Box
         bgColor="#fff"
         transform="translateX(-5rem) translateY(-5rem)"
@@ -78,23 +73,40 @@ const FreeFoodieIcon: React.FC = () => {
           </svg>
         </Box>
       </Box>
-      <Text
-        fontFamily="League Gothic"
-        fontSize="120px"
-        color="#fff"
-        letterSpacing="0.15em"
-        textShadow="-0.3rem -0.3rem #FF00BF, -0.6rem -0.6rem #FFEB9A"
+      <Title
         paddingTop="2rem"
-        transform="translateX(0.5rem)"
         data-sal="slide-right"
         data-sal-delay="100"
         data-sal-easing="ease"
         data-sal-duration="700"
       >
         FOODIE
-      </Text>
+      </Title>
     </VStack>
   );
 };
 
 export default FreeFoodieIcon;
+
+const Title = styled(Text)`
+  font-family: "League Gothic";
+  font-size: 120px;
+  color: #fff;
+  letter-spacing: 0.15em;
+  -webkit-animation: neon 1s ease-in-out infinite alternate;
+  -moz-animation: neon 1s ease-in-out infinite alternate;
+  animation: neon 1s ease-in-out infinite alternate;
+
+  @keyframes neon {
+    from {
+      text-shadow: -0.3rem -0.3rem #ff00bf, -0.6rem -0.6rem #ffeb9a,
+        0 0 10px #fff, 0 0 20px #ff1177, 0 0 30px #ff1177, 0 0 35px #ff1177,
+        0 0 40px #ff1177;
+    }
+    to {
+      text-shadow: -0.3rem -0.3rem #ff00bf, -0.6rem -0.6rem #ffeb9a,
+        0 0 10px #fff, 0 0 20px 0 0 25px #ff1177, #ff1177, 0 0 28px #ff1177,
+        0 0 30px #ff1177, 0 0 32px #ff1177;
+    }
+  }
+`;
