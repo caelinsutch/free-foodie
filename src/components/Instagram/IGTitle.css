@@ -1,0 +1,21 @@
+.svg-grapes {
+  width: 120;
+  height: 120;
+}
+
+@media screen and (max-width: 768px) {
+  .my-svg {
+    zoom:0.7;
+  }
+}
+
+.svg-watermelon {
+  width: 120;
+  height: 70;
+}
+
+@media screen and (max-width: 768px) {
+  .my-svg {
+    zoom:0.7;
+  }
+}

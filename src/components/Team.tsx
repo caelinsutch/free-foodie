@@ -1,5 +1,5 @@
 import React from "react";
-import { HStack, VStack, Text, Box, Flex } from "@chakra-ui/react";
+import { VStack, Text, Box, Flex } from "@chakra-ui/react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -34,37 +34,46 @@ const Team: React.FC = () => {
       const image = getImage(item.node.img);
       console.log(image);
       membersArray.push(
-        <VStack
+        <Flex
+          flexDirection={{ base: "row", md: "column" }}
           justifyContent="center"
           alignItems="flex-start"
           textAlign="start"
-          width={{ base: "150px", md: "200px" }}
+          width={{ base: "350px", md: "200px" }}
           key={index}
+          marginRight={{ base: "0rem", md: "2.5rem" }}
+          // marginBottom={{ base: "1rem", md: "0rem" }}
         >
           <Flex
             boxShadow={{
               base: "-0.5rem -0.5rem #FF00BF",
               md: "-1rem -1rem #FF00BF",
             }}
+            marginBottom="0.5rem"
+            marginRight="0.5rem"
+            height={{ base: "150px", md: "300px" }}
+            width={{ base: "200px", md: "200px" }}
           >
             <GatsbyImage image={image} alt={item.node.alt}></GatsbyImage>
           </Flex>
-          <Text
-            fontFamily="Lovelo"
-            fontSize={{ base: "20px", md: "24px" }}
-            color="#FF00BF"
-            textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
-          >
-            {item.node.name}
-          </Text>
-          <Text
-            fontFamily="Glacial Indifference"
-            fontSize={{ base: "12px", md: "14px" }}
-            color="#0c0c0c"
-          >
-            {item.node.description}
-          </Text>
-        </VStack>
+          <VStack alignItems="flex-start" spacing="0rem">
+            <Text
+              fontFamily="Lovelo"
+              fontSize={{ base: "20px", md: "24px" }}
+              color="#FF00BF"
+              textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
+            >
+              {item.node.name}
+            </Text>
+            <Text
+              fontFamily="Glacial Indifference"
+              fontSize={{ base: "12px", md: "14px" }}
+              color="#0c0c0c"
+            >
+              {item.node.description}
+            </Text>
+          </VStack>
+        </Flex>
       );
     });
     return membersArray;
@@ -92,20 +101,20 @@ const Team: React.FC = () => {
       >
         TEAM
       </Text>
-      <HStack
+      <Flex
+        flexDirection={{ base: "column", md: "row" }}
         alignItems="flex-start"
-        spacing={{ base: "1.5rem", md: "2.5rem" }}
         zIndex="1000"
-        // paddingBottom="10rem"
         data-sal="fade"
-        // data-sal-delay="500"
         data-sal-easing="ease"
         data-sal-duration="1500"
+        bgColor={{ base: "#fff", sm: "transparent" }}
+        padding="2rem 2rem"
       >
         {getMembers(data)}
-      </HStack>
+      </Flex>
       <Box
-        bgColor="white"
+        bgColor={{ base: "transparent", sm: "#fff" }}
         width={{ base: "850px", md: "850px" }}
         height={{ base: "300", md: "375px" }}
         position="absolute"
