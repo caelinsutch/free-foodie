@@ -105,8 +105,7 @@ const Title = styled(Text)`
     }
     to {
       text-shadow: -0.3rem -0.3rem #ff00bf, -0.6rem -0.6rem #ffeb9a,
-        0 0 10px #fff, 0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 28px #ff1177,
-        0 0 30px #ff1177, 0 0 32px #ff1177;
+        0 0 10px #fff, 0 0 20px #ff1177, 0 0 25px #ff1177, 0 0 28px #ff1177;
     }
   }
 `;
