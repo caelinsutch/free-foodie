@@ -45,7 +45,7 @@ const Donate: React.FC = () => {
                 color="#fff"
                 fontSize="40px"
               >
-                $5
+                £5
               </Text>
             </Button>
             <Button
@@ -59,7 +59,7 @@ const Donate: React.FC = () => {
                 color="#fff"
                 fontSize="40px"
               >
-                $10
+                £10
               </Text>
             </Button>
             <Button
@@ -73,7 +73,7 @@ const Donate: React.FC = () => {
                 color="#fff"
                 fontSize="40px"
               >
-                $xx
+                £xx
               </Text>
             </Button>
           </HStack>

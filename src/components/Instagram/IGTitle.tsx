@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, Text, Box, Link } from "@chakra-ui/react";
+import { VStack, Text, Link } from "@chakra-ui/react";
 
 const IGTitle: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ const IGTitle: React.FC = () => {
           </Text>
         </Link>
       </VStack>
-      <Box
+      {/* <Box
         position="absolute"
         transform="translateY(22rem) translatex(12rem)"
         zIndex={1}
@@ -70,7 +70,7 @@ const IGTitle: React.FC = () => {
             fill="#00F4CF"
           />
         </svg>
-      </Box>
+      </Box> */}
     </>
   );
 };
