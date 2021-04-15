@@ -19,8 +19,16 @@ const ProfileCircle: React.FC<ProfileCircleProps> = ({
 }) => {
   return (
     <Profile width="225px" height="225px" borderRadius="50%" overflow="hidden">
-      <Background image={image} alt={alt}></Background>
-      <BackDrop image={image} alt={alt}></BackDrop>
+      <Background
+        image={image}
+        alt={alt}
+        style={{ position: "absolute" }}
+      ></Background>
+      <BackDrop
+        image={image}
+        alt={alt}
+        style={{ position: "absolute" }}
+      ></BackDrop>
       <Text
         fontFamily="Lovelo"
         fontSize={{ base: "16px", md: "20px" }}
@@ -45,7 +53,6 @@ const ProfileCircle: React.FC<ProfileCircleProps> = ({
 export default ProfileCircle;
 
 const Background = styled(GatsbyImage)`
-  position: absolute;
   width: 225px;
   height: 225px;
   border-radius: 50%;
@@ -57,7 +64,6 @@ const Background = styled(GatsbyImage)`
 `;
 
 const BackDrop = styled(GatsbyImage)`
-  position: absolute;
   transform: translateY(-0.2rem);
   width: 225px;
   height: 225px;
