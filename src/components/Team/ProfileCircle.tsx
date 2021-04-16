@@ -1,7 +1,7 @@
+import React from "react";
 import { Text, VStack } from "@chakra-ui/layout";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import { GatsbyImage } from "gatsby-plugin-image";
-import React from "react";
 import styled from "styled-components";
 
 type ProfileCircleProps = {
@@ -19,33 +19,26 @@ const ProfileCircle: React.FC<ProfileCircleProps> = ({
 }) => {
   return (
     <Profile width="225px" height="225px" borderRadius="50%" overflow="hidden">
-      <Background
-        image={image}
-        alt={alt}
-        style={{ position: "absolute" }}
-      ></Background>
-      <BackDrop
-        image={image}
-        alt={alt}
-        style={{ position: "absolute" }}
-      ></BackDrop>
-      <Text
-        fontFamily="Lovelo"
-        fontSize={{ base: "16px", md: "20px" }}
-        color="#FF00BF"
-        textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
-      >
-        {name}
-      </Text>
-      <Text
-        fontFamily="Glacial Indifference"
-        fontSize={{ base: "12px", md: "14px" }}
-        color="#0c0c0c"
-        padding="0rem 1rem"
-        textAlign="center"
-      >
-        {description}
-      </Text>
+      <Background image={image} alt={alt}></Background>
+      <VStack position="absolute">
+        <Text
+          fontFamily="Lovelo"
+          fontSize={{ base: "16px", md: "20px" }}
+          color="#FF00BF"
+          textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
+        >
+          {name}
+        </Text>
+        <Text
+          fontFamily="Glacial Indifference"
+          fontSize={{ base: "12px", md: "14px" }}
+          color="#0c0c0c"
+          padding="0rem 1rem"
+          textAlign="center"
+        >
+          {description}
+        </Text>
+      </VStack>
     </Profile>
   );
 };
@@ -53,24 +46,15 @@ const ProfileCircle: React.FC<ProfileCircleProps> = ({
 export default ProfileCircle;
 
 const Background = styled(GatsbyImage)`
+  position: relative;
   width: 225px;
   height: 225px;
   border-radius: 50%;
   transition: opacity 0.25s;
   z-index: 100;
   &:hover {
-    opacity: 0;
+    opacity: 0.1;
   }
-`;
-
-const BackDrop = styled(GatsbyImage)`
-  transform: translateY(-0.2rem);
-  width: 225px;
-  height: 225px;
-  border-radius: 50%;
-  /* transition: opacity 0.25s; */
-  opacity: 0.15;
-  z-index: 1;
 `;
 
 const Profile = styled(VStack)`
