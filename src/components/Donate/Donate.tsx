@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import DonationDetails from "./DonationDetails";
 import PaymentDetails from "./PaymentDetails";
 import SuccessPage from "./SuccessPage";
+import Subscription from "./Subscription";
 
 const Donate: React.FC = () => {
   const [page, setPage] = useState(0);
@@ -37,7 +38,7 @@ const Donate: React.FC = () => {
       <VStack>
         <Text
           fontFamily="Lovelo"
-          fontSize={{ base: "90px", md: "120px" }}
+          fontSize={{ base: "80px", md: "90px" }}
           color="#fff"
           data-sal="slide-right"
           data-sal-easing="ease"
@@ -45,7 +46,16 @@ const Donate: React.FC = () => {
         >
           DONATE
         </Text>
-        {formSwitch()}
+        <Flex flexDirection={{ base: "column", md: "row" }}>
+          <Flex
+            paddingBottom="1rem"
+            paddingRight={{ base: "none", md: "1rem" }}
+          >
+            {formSwitch()}
+          </Flex>
+
+          <Subscription />
+        </Flex>
       </VStack>
     </Flex>
   );

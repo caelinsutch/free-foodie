@@ -17,11 +17,15 @@ const DonationDetails: React.FC<DonationDetailsProps> = ({ nextPage }) => {
       data-sal="slide-left"
       data-sal-easing="ease"
       data-sal-duration="1500"
+      width={{ base: "20rem", md: "30rem" }}
+      height={{ base: "20rem", md: "25rem" }}
+      justifyContent="center"
+      alignItems="center"
     >
       <HStack>
         <Button
-          height="100px"
-          width="100px"
+          height={{ base: "80px", md: "100px" }}
+          width={{ base: "80px", md: "100px" }}
           bgColor="#FBE074"
           borderRadius="0px"
         >
@@ -30,8 +34,8 @@ const DonationDetails: React.FC<DonationDetailsProps> = ({ nextPage }) => {
           </Text>
         </Button>
         <Button
-          height="100px"
-          width="100px"
+          height={{ base: "80px", md: "100px" }}
+          width={{ base: "80px", md: "100px" }}
           bgColor="#FBE074"
           borderRadius="0px"
         >
@@ -40,8 +44,8 @@ const DonationDetails: React.FC<DonationDetailsProps> = ({ nextPage }) => {
           </Text>
         </Button>
         <Button
-          height="100px"
-          width="100px"
+          height={{ base: "80px", md: "100px" }}
+          width={{ base: "80px", md: "100px" }}
           bgColor="#FBE074"
           borderRadius="0px"
         >

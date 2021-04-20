@@ -9,7 +9,10 @@ const SuccessPage: React.FC = () => {
       borderColor="#ECCB45"
       bgColor="#fff"
       spacing="1rem"
-      padding={{ base: "1rem 1rem", sm: "3rem 3rem" }}
+      width={{ base: "20rem", md: "30rem" }}
+      height={{ base: "20rem", md: "25rem" }}
+      justifyContent="center"
+      alignItems="center"
     >
       <svg
         width="65"

@@ -14,44 +14,51 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({ nextPage }) => {
       borderColor="#ECCB45"
       bgColor="#fff"
       spacing="1rem"
-      padding={{ base: "1rem 1rem", sm: "3rem 3rem" }}
+      padding={{ base: "0.5rem 0.5rem", sm: "2rem 2rem" }}
+      width={{ base: "20rem", md: "30rem" }}
+      height={{ base: "20rem", md: "25rem" }}
+      justifyContent="center"
+      alignItems="center"
     >
       <VStack alignItems="flex-start">
-        <DonateText>Credit Card</DonateText>
+        <DonateText size={{ base: "sm", md: "md" }}>Credit Card</DonateText>
         <DonateInput
           placeholder="XXXX XXXX XXXX XXXX"
           fontFamily="Pt Mono"
           borderWidth="0px"
-          size="md"
+          size={{ base: "sm", md: "md" }}
           paddingLeft="1rem"
         />
         <HStack>
           <VStack alignItems="flex-start">
-            <DonateText>Expiration</DonateText>
+            <DonateText size={{ base: "sm", md: "md" }}>Expiration</DonateText>
             <DonateInput
               placeholder="XX/XX"
               fontFamily="Pt Mono"
               borderWidth="0px"
-              size="md"
+              size={{ base: "sm", md: "md" }}
+              paddingLeft="1rem"
             />
           </VStack>
           <VStack alignItems="flex-start">
-            <DonateText>CVV</DonateText>
+            <DonateText size={{ base: "sm", md: "md" }}>CVV</DonateText>
             <DonateInput
               placeholder="XXX"
               fontFamily="Pt Mono"
               borderWidth="0px"
-              size="md"
+              size={{ base: "sm", md: "md" }}
+              paddingLeft="1rem"
             />
           </VStack>
         </HStack>
 
-        <DonateText>Address</DonateText>
+        <DonateText size={{ base: "sm", md: "md" }}>Address</DonateText>
         <DonateInput
           placeholder="Address"
           fontFamily="Pt Mono"
           borderWidth="0px"
-          size="md"
+          size={{ base: "sm", md: "md" }}
+          paddingLeft="1rem"
         />
       </VStack>
       <Button
@@ -60,10 +67,10 @@ const PaymentDetails: React.FC<PaymentDetailsProps> = ({ nextPage }) => {
         borderColor="#FBE074"
         borderRadius={0}
         bgColor="transparent"
-        padding="1.5rem 1rem"
+        padding={{ base: "0.5rem 0.5rem", md: "1.5rem 1rem" }}
         onClick={() => nextPage()}
       >
-        <Text color="#FBE074" fontSize="30px">
+        <Text color="#FBE074" fontSize={{ base: "22px", md: "30px" }}>
           Submit
         </Text>
       </Button>
