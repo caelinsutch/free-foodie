@@ -4,6 +4,12 @@ module.exports = {
     siteUrl: "https://freefoodie.gatsbyjs.io/",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `45769541085`,
+      },
+    },
     "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
