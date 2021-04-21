@@ -37,7 +37,6 @@ const Instagram: React.FC = () => {
   }
 
   const info = getIGInfo(data);
-  console.log(info);
 
   return (
     <Flex
