@@ -69,7 +69,7 @@ const Team: React.FC = () => {
             }}
             marginBottom="0.5rem"
             marginRight="1rem"
-            height={{ base: "150px", md: "300px" }}
+            height={{ base: "100px", md: "300px" }}
             width={{ base: "200px", md: "200px" }}
           >
             <ProfileImg image={image} alt={item.node.alt}></ProfileImg>
@@ -77,7 +77,7 @@ const Team: React.FC = () => {
           <VStack alignItems="flex-start" spacing="0rem">
             <Text
               fontFamily="Lovelo"
-              fontSize={{ base: "20px", md: "24px" }}
+              fontSize={{ base: "18px", md: "24px" }}
               color="#FF00BF"
               textShadow="-0.1rem -0.1rem RGBA(255,0,191,0.20)"
             >
@@ -85,7 +85,7 @@ const Team: React.FC = () => {
             </Text>
             <Text
               fontFamily="Glacial Indifference"
-              fontSize={{ base: "14px", md: "14px" }}
+              fontSize={{ base: "12px", md: "14px" }}
               color="#0c0c0c"
               width="75%"
             >
@@ -111,11 +111,15 @@ const Team: React.FC = () => {
       overflow="hidden"
       padding="2rem 0"
       className="section"
+      marginBottom={{
+        base: 4,
+        md: 0,
+      }}
     >
       <Text
         fontFamily="Lovelo"
         color="#fff"
-        fontSize={{ base: "100px", md: "120px" }}
+        fontSize={{ base: "60px", md: "120px" }}
         // paddingBottom="2rem"
         data-sal="slide-left"
         data-sal-easing="ease"
@@ -131,15 +135,14 @@ const Team: React.FC = () => {
         data-sal-easing="ease"
         data-sal-duration="1500"
         bgColor={{ base: "#fff", sm: "transparent" }}
-        padding="1rem 1rem"
-        paddingTop="2rem"
+        padding={{ base: 1, md: 2 }}
       >
         {getMembersSmall(data)}
       </VStack>
       <Box
         display={{ base: "none", sm: "block" }}
         position="absolute"
-        transform="translateX(14rem) translateY(10rem)"
+        transform=" translateY(-12rem)"
         data-sal="fade"
         data-sal-easing="ease"
         data-sal-duration="1500"
@@ -159,7 +162,7 @@ const Team: React.FC = () => {
       <Box
         display={{ base: "none", sm: "block" }}
         position="absolute"
-        transform="translateX(16rem) translateY(-10rem)"
+        transform="translateX(20rem)"
         data-sal="fade"
         data-sal-easing="ease"
         data-sal-duration="1500"
@@ -169,22 +172,12 @@ const Team: React.FC = () => {
       <Box
         display={{ base: "none", sm: "block" }}
         position="absolute"
-        transform="translateX(-6rem) translateY(14rem)"
+        transform="translateY(12rem)"
         data-sal="fade"
         data-sal-easing="ease"
         data-sal-duration="1500"
       >
-        {allProfiles[2]}
-      </Box>
-      <Box
-        display={{ base: "none", sm: "block" }}
-        position="absolute"
-        transform="translateX(-4rem) translateY(-14rem)"
-        data-sal="fade"
-        data-sal-easing="ease"
-        data-sal-duration="1500"
-      >
-        {allProfiles[2]}
+        {allProfiles[3]}
       </Box>
       {/* <Box
         bgColor={{ base: "transparent", sm: "#fff" }}
@@ -203,6 +196,6 @@ const Team: React.FC = () => {
 export default Team;
 
 const ProfileImg = styled(GatsbyImage)`
-  height: 150px;
+  height: 100px;
   width: 100px;
 `;

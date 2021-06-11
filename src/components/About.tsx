@@ -46,24 +46,21 @@ const About: React.FC = () => {
           }}
           lineHeight={{ base: "1.5rem", lg: "2rem" }}
         >
-          Every year, around 1/3 of all food is wasted, yet 854 million people
-          are considered undernourished worldwide. But the reality of today
-          doesn’t have to be the reality of tomorrow.
+          At Free Foodie, our mission is simple: spread the word about food
+          waste. Whether through our podcast series, our YouTube channel, our
+          Instagram page or even our Tik Tok page, we want to create a community
+          where anyone can understand, discuss, and most importantly, help
+          tackle the problem of food waste.
           <br />
           <br />
-          At Free Foodie, our mission is simple: create a community where anyone
-          can understand, discuss, and most importantly, help tackle the problem
-          of food waste. Whether through podcasting, “Instagram-ing”, or even
-          “Tik Tok-ing” we just want to do everything we can to help make people
-          aware of the dangers and consequences of food waste.
-          <br />
-          <br />
-          And while we know that to create a meaningful impact takes A LOT of
-          time, effort, and patience, we believe that with the right mentality
+          At the end of the day, Free Foodie is just a bunch of students who
+          love food and want the whole world to love it as much as we do! And
+          while we know that to create a meaningful impact takes A LOT of time,
+          effort, and patience, we believe that with the right mentality
           ANYTHING is possible.
           <br />
           <br />
-          So, come join the Free Foodie family!
+          So, enough rambling! Come join the Free Foodie family!
         </Text>
       </Flex>
     </Flex>

@@ -19,5 +19,12 @@
     "name": "Jack Bennett",
     "description":
       "Originally from Yorkshire and now studying History at the University of Edinburgh, I hope to see the world and make a change."
+  },
+  {
+    "img": "../images/Meg.png",
+    "alt": "Meg Dewhirst Profile Image",
+    "name": "Meg Dewhirst ",
+    "description":
+      "Originally from Yorkshire and now studying History at the University of Edinburgh, I hope to see the world and make a change."
   }
 ]

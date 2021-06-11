@@ -2573,6 +2573,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-helmet@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.1.tgz#4fde22cbcaa1b461642e1d719cc6162d95acb110"
+  integrity sha512-VmSCMz6jp/06DABoY60vQa++h1YFt0PfAI23llxBJHbowqFgLUL0dhS1AQeVPNqYfRp9LAfokrfWACTNeobOrg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^17.0.3":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
@@ -5267,11 +5274,6 @@ electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.649:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.701.tgz#5e796ed7ce88cd77bc7bf831cf311ef6b067c389"
   integrity sha512-Zd9ofdIMYHYhG1gvnejQDvC/kqSeXQvtXF0yRURGxgwGqDZm9F9Fm3dYFnm5gyuA7xpXfBlzVLN1sz0FjxpKfw==
 
-email-regex@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/email-regex/-/email-regex-3.0.0.tgz#60124ad22db6660c94e9f7e04d246b588b9440a8"
-  integrity sha512-5FxVen6tUcRJFHpFnW8jMMP4W7tP/xAaYIshi8ia72KMjmRJIwRvTZjWvJYd3qO6W7urOe4DmdbkNB2LkAs8JQ==
-
 emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -7106,13 +7108,6 @@ get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-emails@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/get-emails/-/get-emails-3.0.0.tgz#3030234f5c3552bb8aab442fbbaa26e9785f027c"
-  integrity sha512-bZsYKAbRtpVQAojhJ6Qg5pXh0h5A0KL0SdbhZXpXn0SYF/5b4l46OJsm1ZC/k5reHF64h1kyXG9pX9I09LuosA==
-  dependencies:
-    email-regex "^3.0.0"
-
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.1.1.tgz#15f59f376f855c446963948f0d24cd3637b4abc6"
@@ -7363,7 +7358,7 @@ got@8.3.2, got@^8.3.1:
     url-parse-lax "^3.0.0"
     url-to-options "^1.0.1"
 
-got@^10.0.0-alpha.1.1, got@^10.0.0-alpha.2.2, got@^10.7.0:
+got@^10.7.0:
   version "10.7.0"
   resolved "https://registry.yarnpkg.com/got/-/got-10.7.0.tgz#62889dbcd6cca32cd6a154cc2d0c6895121d091f"
   integrity sha512-aWTDeNw9g+XqEZNcTjMMZSy7B7yE9toWOFYip7ofFTLleJhvZwUxxTxkTpKvF+p1SAA4VHmuEy7PiHTHyq8tJg==
@@ -7982,22 +7977,6 @@ inquirer@^7.0.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
     through "^2.3.6"
-
-instagram-posts@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/instagram-posts/-/instagram-posts-2.2.0.tgz#ad2bfd06354a611afbd740eecaeb6237c86ac515"
-  integrity sha512-An5eJjEtoPthbe3rfMvV07D3ugHZNvY1/1Rl/ThoG4Ro5eXko4M5LLfKEsDmxSiBTZGCXsZguUstNcsvzUIIAA==
-  dependencies:
-    got "^10.0.0-alpha.2.2"
-    instagram-user "^2.0.0"
-
-instagram-user@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/instagram-user/-/instagram-user-2.0.1.tgz#1c021abaf23ab4fe2679c82c2cef8347dfa9bdaf"
-  integrity sha512-UUTz6kJoFde7O3rOGMQ7m9DOngFfFqVJ/GR8jqrXUetTW39ZxXe/maJF+WYANv19ZHd/h3N4CzTnZnfcMBNgAg==
-  dependencies:
-    get-emails "^3.0.0"
-    got "^10.0.0-alpha.1.1"
 
 internal-ip@^4.3.0:
   version "4.3.0"
