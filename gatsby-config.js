@@ -8,6 +8,11 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `45769541085`,
+        access_token: "bc10acf06e633eeecb8be6875568c986",
+        instagram_id: "1110884146095941",
+        paginate: 100,
+        maxPosts: 1000,
+        hashtags: true,
       },
     },
     "gatsby-transformer-json",
