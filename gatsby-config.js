@@ -5,14 +5,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-instagram`,
+      resolve: `gatsby-source-instagram-all`,
       options: {
-        username: `45769541085`,
-        access_token: "bc10acf06e633eeecb8be6875568c986",
-        instagram_id: "1110884146095941",
-        paginate: 100,
-        maxPosts: 1000,
-        hashtags: true,
+        access_token:
+          "IGQVJXaEcwWWc0SmJSTXlmdEgxbDlnUGVMWGdYckNjaWJsTjU1RC1NZA2E5Umw1SlYwQWFncHVHaS1LV09pbzFPUG5LakhsN1RLSml3aHNoVm9wem9YMEJQXzd6YlFmVGx3TUdqMjljclZAiak5KRTBfWQZDZD",
       },
     },
     "gatsby-transformer-json",
